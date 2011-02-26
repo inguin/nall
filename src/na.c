@@ -131,7 +131,7 @@ void na_update_tooltip(void)
 	gtk_status_icon_set_tooltip(nall_globals.icon, tooltip_buffer);
 
 	const gchar* icon = (status == 0) ? GTK_STOCK_INFO : GTK_STOCK_DIALOG_WARNING;
-	gtk_status_icon_set_from_icon_name(nall_globals.icon, icon);
+	gtk_status_icon_set_from_stock(nall_globals.icon, icon);
 }
 
 /* read child output on child termination event */

@@ -68,7 +68,7 @@ static GtkStatusIcon* tray_icon_create(void)
 
         tray_icon = gtk_status_icon_new();
 	/* systray visible icon */
-        gtk_status_icon_set_from_icon_name(tray_icon, GTK_STOCK_INFO);
+        gtk_status_icon_set_from_stock(tray_icon, GTK_STOCK_INFO);
 	/* default wm icon (for subsequent windows) */
         gtk_window_set_default_icon_name(GTK_STOCK_INFO);
         gtk_status_icon_set_tooltip(tray_icon, "nall");
